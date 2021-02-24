@@ -147,11 +147,8 @@ small_trains %>%
         legend.title = element_blank()) +
   transition_time(month) +
   shadow_wake(wake_length = .3)
-  
-```
-
-```{r}
-#anim_save("BusyStationDepartures.gif")
+ 
+anim_save("BusyStationDepartures.gif") 
 ```
 
 ```{r}
@@ -186,10 +183,8 @@ garden_harvest %>%
        fill = "Tomato Variety") + 
   theme(legend.position = "left") +
   transition_reveal(date)
-```
 
-```{r}
-#anim_save("daily_harvest.gif")
+anim_save("daily_harvest.gif")
 ```
 
 ```{r}
@@ -235,11 +230,7 @@ ggmap(mallorca_map) +
   transition_reveal(time) +
   shadow_mark(past = TRUE)
 
-```
-
-
-```{r}
-#anim_save("mallorca_bike.gif")
+anim_save("mallorca_bike.gif")
 ```
 
 ```{r}
@@ -273,10 +264,8 @@ ggmap(panama_map) +
     color = "Event")+
   transition_reveal(time)+
   shadow_mark(past=FALSE)
-```
 
-```{r}
-#anim_save("triathalon.gif")
+anim_save("triathalon.gif")
 ```
 
 ```{r}
@@ -316,12 +305,8 @@ covid_anim <- covid19 %>%
 
 animate(covid_anim, nframes = 200, duration = 30)
  
+anim_save("covid_trajectory.gif")
 ```
-
-```{r}
-#anim_save("covid_trajectory.gif")
-```
-
 
 ```{r}
 knitr::include_graphics("covid_trajectory.gif")
@@ -372,10 +357,7 @@ covid_standardized <- covid19_with_pop_est %>%
 
 animate(covid_standardized, nframes = 200, end_pause = 10)
 
-```
-
-```{r}
-#anim_save("covid_standardized.gif")
+anim_save("covid_standardized.gif")
 ```
 
 ```{r}
@@ -394,5 +376,4 @@ NOT DUE THIS WEEK! If any of you want to work ahead, this will be on next week's
 
   9. Below, provide a link to your GitHub page with this set of Weekly Exercises. Specifically, if the name of the file is 05_exercises.Rmd, provide a link to the 05_exercises.md file, which is the one that will be most readable on GitHub. If that file isn't very readable, then provide a link to your main GitHub page.
 
-
-**DID YOU REMEMBER TO UNCOMMENT THE OPTIONS AT THE TOP?**
+[GitHub Link](https://github.com/greynolds1121/Reynolds_Week_5_HW/blob/main/Reynolds_HW5.md)
